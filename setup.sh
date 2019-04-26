@@ -46,7 +46,7 @@ LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-openembedded.git;b
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-openembedded.git;branch=thud;layer=meta-gnome \
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-openembedded.git;branch=thud;layer=meta-multimedia \
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-openembedded.git;branch=thud;layer=meta-xfce \
-LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-selinux.git;branch=master \
+LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-selinux.git;branch=thud \
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-security.git;branch=thud \
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-cgl.git;branch=master;layer=meta-cgl-common \
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-cloud-services.git;branch=thud \
@@ -57,7 +57,7 @@ MACHINE@qemuriscv64 \
 DISTRO@mvista-cgx \
 CONFIG@PREFERRED_PROVIDER_virtual/kernel=linux-riscv \
 "
-BUILD_TOOLS_LOCATION=http://downloads.yoctoproject.org/releases/yocto/yocto-2.3.3/buildtools/
+BUILD_TOOLS_LOCATION="$(lynx -dump http://downloads.yoctoproject.org/releases/yocto/ | grep yocto-2.6 | gawk -F " " '{print $2}' | tail -n 1)buildtools"
 TOPDIR=$(dirname $THIS_SCRIPT)
 buildtar=""
 URL=""
