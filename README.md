@@ -1,6 +1,6 @@
-# Release repository for qemuriscv64
+# Release repository for freedom-u540
 
-Montavista Software, LLC. release of qemuriscv64. 
+Montavista Software, LLC. release of freedom-u540.
 
 How to use:
 ==========
@@ -40,11 +40,11 @@ directory layout:
 ================
 ```
 opencgx-riscv-2.6/
-       project - bitbake project for the qemuriscv64 project build
+       project - bitbake project for the freedom-u540 project build
        buildtools - build tools to provide minimal build requirement for poky builds
-       layers - layers for building qemuriscv64 project
+       layers - layers for building freedom-u540 project
        setup.sh - project setup script
        bin - various helper applications for setting up and maintaining the release directory
 ```
 
-Verfied machines: qemuriscv64 
+Verified machines: freedom-u540

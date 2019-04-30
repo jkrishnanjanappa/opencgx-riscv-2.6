@@ -53,7 +53,7 @@ LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-cloud-services.git
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-cloud-services.git;branch=thud;layer=meta-openstack \
 LAYER@https://github.com/MontaVista-OpenSourceTechnology/meta-montavista-cgl.git;branch=thud \
 LAYER@https://github.com/riscv/meta-riscv;branch=master \
-MACHINE@qemuriscv64 \
+MACHINE@freedom-u540 \
 DISTRO@mvista-cgx \
 CONFIG@PREFERRED_PROVIDER_virtual/kernel=linux-riscv \
 "
